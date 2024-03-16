@@ -1,0 +1,20 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDolist</title>
+</head>
+<body>
+    <form action="/api/ToDo" method="post">
+        <input type="text" name="todo_input">
+        <button type="submit">Add</button>
+    </form>
+    <ul>
+        <% todos.forEach(function(a){ %>
+            <li><%= a %></li>
+        <%})%>
+        
+    </ul>
+</body>
+</html>
